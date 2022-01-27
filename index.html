@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>FC Liverpool</title>
+		<script>	
+		  function showBtn()
+		{
+        var livLogo = document.getElementsByTagName("img")[0];
+        var currentStatus = livLogo.style.visibility;
+        console.log(currentStatus)
+        if (currentStatus != "hidden")
+            livLogo.style.visibility = "hidden" 
+        else
+            livLogo.style.visibility = "visible";
+		}
+		</script>
+	</head>
+		<body align="center" style = "background-color: #ffcc99">
+		<h1>Официальный сайт футбольного клуба Ливерпуль</h1>
+		<p>Футбольный клуб ливерпуль был основан в 1892 году</p>
+		<img src="https://upload.wikimedia.org/wikipedia/ru/thumb/0/0a/FC_Liverpool.svg/1200px-FC_Liverpool.svg.png" width="300" high="100" style="visibility: visible;">
+		<br>
+		<button onclick="showBtn()">show/hide Liverpool logo
+		</button>
+		
+
+		</body>
+	 
+
+</html>
